@@ -1,0 +1,1799 @@
+<?xml version="1.0"?>
+<xml>
+    <structure>
+        <divisions>
+            <division>
+                <_id>633fdcf906985</_id>
+                <name>students</name>
+                <prefix>s</prefix>
+                <number>3</number>
+                <label>
+                    <pl>Studenci</pl>
+                    <en />
+                </label>
+                <duplicate>62cd24dd7ca5c</duplicate>
+                <group>5</group>
+                <bookmarks>
+                    <bookmark>
+                        <id>318</id>
+                        <name>start</name>
+                        <label>
+                            <pl>Dane podstawowe</pl>
+                            <en>Dane podstawowe</en>
+                        </label>
+                        <order>1</order>
+                        <type>1</type>
+                        <clusters>
+                            <cluster>
+                                <id>649</id>
+                                <name>name</name>
+                                <label>
+                                    <pl>Nazwa</pl>
+                                    <en>Name</en>
+                                </label>
+                                <order>2</order>
+                            </cluster>
+                            <fields>
+                                <field>
+                                    <name>name</name>
+                                    <label>
+                                        <pl>Imie</pl>
+                                        <en>Name</en>
+                                    </label>
+                                    <order>1</order>
+                                    <type>singlemultilang</type>
+                                    <dictionary />
+                                    <require>1</require>
+                                    <sort>name</sort>
+                                    <sortpath />
+                                    <fulltext>name</fulltext>
+                                    <write>0</write>
+                                    <limit>80</limit>
+                                    <complex>0</complex>
+                                    <instruction />
+                                </field>
+                                <field>
+                                    <name>shortdescription</name>
+                                    <label>
+                                        <pl>Skr&#xF3;cony opis</pl>
+                                        <en>Skr&#xF3;cony opis</en>
+                                    </label>
+                                    <order>3</order>
+                                    <type>htmlmultilang</type>
+                                    <dictionary />
+                                    <require>1</require>
+                                    <sort>shortdescription</sort>
+                                    <sortpath />
+                                    <fulltext>shortdescription</fulltext>
+                                    <write>0</write>
+                                    <limit>250</limit>
+                                    <complex>0</complex>
+                                    <instruction />
+                                </field>
+                                <field>
+                                    <name>description</name>
+                                    <label>
+                                        <pl>Opis</pl>
+                                        <en>Description</en>
+                                    </label>
+                                    <order>4</order>
+                                    <type>htmlmultilang</type>
+                                    <dictionary />
+                                    <require>0</require>
+                                    <sort>description</sort>
+                                    <sortpath />
+                                    <fulltext>description</fulltext>
+                                    <write>0</write>
+                                    <limit>0</limit>
+                                    <complex>0</complex>
+                                    <instruction>Wype&#x142;nia opracowuj&#x105;cy
+wpis danych
+
+Rozwini&#x119;cie i uszczeg&#xF3;&#x142;owienie informacji zawartych w polu Nazwa i Skr&#xF3;cony opis.
+
+Spos&#xF3;b zapisu:
+Opis nale&#x17C;y formu&#x142;owa&#x107; zwi&#x119;&#x17A;le, przechodz&#x105;c od og&#xF3;&#x142;u do szczeg&#xF3;&#x142;u, w miar&#x119; mo&#x17C;liwo&#x15B;ci podaj&#x105;c informacje w mianowniku (niezb&#x119;dne dla wyszukiwania danych).
+Wpis nale&#x17C;y rozpoczyna&#x107; wielk&#x105; liter&#x105; i zako&#x144;czy&#x107; kropk&#x105;.
+Cytowane teksty (z zachowaniem oryginalnej pisowni, b&#x142;&#x119;dami j&#x119;zykowymi itp.) nale&#x17C;y zamieszcza&#x107; w cudzys&#x142;owie.
+
+Uwagi:
+Nale&#x17C;y stara&#x107; si&#x119; nie powtarza&#x107; informacji z pola Skr&#xF3;cony opis. 
+Opis rewersu fotografii nale&#x17C;y rozpocz&#x105;&#x107; od nowej linijki.
+W polu mog&#x105; zosta&#x107; zawarte tak&#x17C;e dodatkowe informacje, np. historyczne, odnosz&#x105;ce si&#x119; do fotografowanego obiektu.</instruction>
+                                </field>
+                                <field>
+                                    <name>surname</name>
+                                    <label>
+                                        <pl>Nazwisko</pl>
+                                        <en />
+                                    </label>
+                                    <order>2</order>
+                                    <type>single</type>
+                                    <dictionary />
+                                    <require>1</require>
+                                    <sort />
+                                    <sortpath />
+                                    <fulltext />
+                                    <write>0</write>
+                                    <limit>0</limit>
+                                    <complex>0</complex>
+                                    <instruction />
+                                </field>
+                            </fields>
+                            <cluster>
+                                <id>650</id>
+                                <name>number</name>
+                                <label>
+                                    <pl>Numer</pl>
+                                    <en>Number</en>
+                                </label>
+                                <order>1</order>
+                            </cluster>
+                            <fields>
+                                <field>
+                                    <name>inventorynumber</name>
+                                    <label>
+                                        <pl>ID</pl>
+                                        <en>Numer inwentarzowy</en>
+                                    </label>
+                                    <order>1</order>
+                                    <type>single</type>
+                                    <dictionary />
+                                    <require>1</require>
+                                    <sort>inventorynumber</sort>
+                                    <sortpath />
+                                    <fulltext />
+                                    <write>0</write>
+                                    <limit>0</limit>
+                                    <complex>0</complex>
+                                    <instruction>ID studenta</instruction>
+                                </field>
+                                <field>
+                                    <name>status</name>
+                                    <label>
+                                        <pl>Status</pl>
+                                        <en>Status</en>
+                                    </label>
+                                    <order>2</order>
+                                    <type>singledict</type>
+                                    <dictionary>objectstatus</dictionary>
+                                    <require>1</require>
+                                    <sort>status</sort>
+                                    <sortpath />
+                                    <fulltext />
+                                    <write>0</write>
+                                    <limit>0</limit>
+                                    <complex>0</complex>
+                                    <instruction />
+                                </field>
+                                <field>
+                                    <name>numbercomments</name>
+                                    <label>
+                                        <pl>Uwagi</pl>
+                                        <en>Uwagi</en>
+                                    </label>
+                                    <order>3</order>
+                                    <type>single</type>
+                                    <dictionary />
+                                    <require>0</require>
+                                    <sort>numbercomments</sort>
+                                    <sortpath />
+                                    <fulltext />
+                                    <write>0</write>
+                                    <limit>0</limit>
+                                    <complex>0</complex>
+                                    <instruction>Wype&#x142;nia Dzia&#x142; Inwentarzy
+Wpis danych
+
+Informacja na temat przyczyny oraz podstawy zmiany statusu obiektu.
+
+Przyk&#x142;ad:
+Obiekt zniszczony. Skre&#x15B;lenie obiektu z ksi&#x119;gi w oparciu o pozwolenia MKiDN z dnia ..........</instruction>
+                                </field>
+                            </fields>
+                            <cluster>
+                                <id>654</id>
+                                <name>extra</name>
+                                <label>
+                                    <pl>Dodatkowe</pl>
+                                    <en>Dodatkowe</en>
+                                </label>
+                                <order>4</order>
+                            </cluster>
+                            <fields>
+                                <field>
+                                    <name>devise</name>
+                                    <label>
+                                        <pl>Opracowa&#x142;</pl>
+                                        <en />
+                                    </label>
+                                    <order>1</order>
+                                    <type>singledict</type>
+                                    <dictionary>developed</dictionary>
+                                    <require>0</require>
+                                    <sort>devise</sort>
+                                    <sortpath />
+                                    <fulltext />
+                                    <write>0</write>
+                                    <limit>0</limit>
+                                    <complex>0</complex>
+                                    <instruction>Wype&#x142;nia opracowuj&#x105;cy
+wyb&#xF3;r ze s&#x142;ownika: Opracowa&#x142;
+
+Osoba wprowadzaj&#x105;ca dane ewidencyjne do karty.
+
+Has&#x142;o wybierane jednorazowo, po zako&#x144;czeniu opracowywania rekordu, w ramach akcesji obiektu do zbior&#xF3;w. Has&#x142;o nie powinno by&#x107; zmieniane w przypadku p&#xF3;&#x17A;niejszego uzupe&#x142;niania b&#x105;d&#x17A; modyfikacji karty (dane dotycz&#x105;ce tych wpis&#xF3;w zapisywane s&#x105; w historii zmian).</instruction>
+                                </field>
+                                <field>
+                                    <name>devisiondate</name>
+                                    <label>
+                                        <pl>Data opracowania</pl>
+                                        <en />
+                                    </label>
+                                    <order>2</order>
+                                    <type>datesingle</type>
+                                    <dictionary />
+                                    <require>1</require>
+                                    <sort>devisiondate</sort>
+                                    <sortpath />
+                                    <fulltext />
+                                    <write>0</write>
+                                    <limit>0</limit>
+                                    <complex>0</complex>
+                                    <instruction>Wype&#x142;nia opracowuj&#x105;cy
+wyb&#xF3;r daty z kalendarza
+
+Data wprowadzenia danych ewidencyjnych do karty.
+Data wpisywana jednorazowo, po zako&#x144;czeniu opracowywania rekordu, w ramach akcesji obiektu do zbior&#xF3;w.</instruction>
+                                </field>
+                            </fields>
+                            <cluster>
+                                <id>688</id>
+                                <name>course</name>
+                                <label>
+                                    <pl>Kierunek studi&#xF3;w</pl>
+                                    <en />
+                                </label>
+                                <order>3</order>
+                            </cluster>
+                            <fields>
+                                <field>
+                                    <name>city</name>
+                                    <label>
+                                        <pl>Miasto</pl>
+                                        <en />
+                                    </label>
+                                    <order>1</order>
+                                    <type>singledict</type>
+                                    <dictionary>cities</dictionary>
+                                    <require>0</require>
+                                    <sort />
+                                    <sortpath />
+                                    <fulltext />
+                                    <write>0</write>
+                                    <limit>0</limit>
+                                    <complex>0</complex>
+                                    <instruction />
+                                </field>
+                                <field>
+                                    <name>year</name>
+                                    <label>
+                                        <pl>Rok studi&#xF3;w</pl>
+                                        <en />
+                                    </label>
+                                    <order>3</order>
+                                    <type>singledict</type>
+                                    <dictionary>years</dictionary>
+                                    <require>0</require>
+                                    <sort />
+                                    <sortpath />
+                                    <fulltext />
+                                    <write>0</write>
+                                    <limit>0</limit>
+                                    <complex>0</complex>
+                                    <instruction />
+                                </field>
+                                <field>
+                                    <name>divisions</name>
+                                    <label>
+                                        <pl>Wydzia&#x142;</pl>
+                                        <en />
+                                    </label>
+                                    <order>2</order>
+                                    <type>singledict</type>
+                                    <dictionary>divisions</dictionary>
+                                    <require>0</require>
+                                    <sort />
+                                    <sortpath />
+                                    <fulltext />
+                                    <write>0</write>
+                                    <limit>0</limit>
+                                    <complex>0</complex>
+                                    <instruction />
+                                </field>
+                            </fields>
+                        </clusters>
+                    </bookmark>
+                    <bookmark>
+                        <id>319</id>
+                        <name>print</name>
+                        <label>
+                            <pl>Wydrukuj</pl>
+                            <en>Print</en>
+                        </label>
+                        <order>5</order>
+                        <type>0</type>
+                        <clusters>
+                            <cluster>
+                                <id>655</id>
+                                <name>print</name>
+                                <label>
+                                    <pl>Drukuj</pl>
+                                    <en>Print</en>
+                                </label>
+                                <order>1</order>
+                            </cluster>
+                            <fields />
+                        </clusters>
+                    </bookmark>
+                    <bookmark>
+                        <id>320</id>
+                        <name>delete</name>
+                        <label>
+                            <pl>Usu&#x144;</pl>
+                            <en>Delete</en>
+                        </label>
+                        <order>6</order>
+                        <type>0</type>
+                        <clusters>
+                            <cluster>
+                                <id>656</id>
+                                <name>delete</name>
+                                <label>
+                                    <pl>Usu&#x144;</pl>
+                                    <en>Delete</en>
+                                </label>
+                                <order>1</order>
+                            </cluster>
+                            <fields />
+                        </clusters>
+                    </bookmark>
+                    <bookmark>
+                        <id>321</id>
+                        <name>files</name>
+                        <label>
+                            <pl>Pliki</pl>
+                            <en>Pliki</en>
+                        </label>
+                        <order>4</order>
+                        <type>0</type>
+                        <clusters />
+                    </bookmark>
+                    <bookmark>
+                        <id>323</id>
+                        <name>prawa</name>
+                        <label>
+                            <pl>Prawa</pl>
+                            <en />
+                        </label>
+                        <order>3</order>
+                        <type>1</type>
+                        <clusters>
+                            <cluster>
+                                <id>666</id>
+                                <name>status</name>
+                                <label>
+                                    <pl>Status</pl>
+                                    <en>Status</en>
+                                </label>
+                                <order>1</order>
+                            </cluster>
+                            <fields>
+                                <field>
+                                    <name>copyright</name>
+                                    <label>
+                                        <pl>Status</pl>
+                                        <en />
+                                    </label>
+                                    <order>1</order>
+                                    <type>singledict</type>
+                                    <dictionary>copyrights</dictionary>
+                                    <require>0</require>
+                                    <sort />
+                                    <sortpath />
+                                    <fulltext />
+                                    <write>0</write>
+                                    <limit>0</limit>
+                                    <complex>0</complex>
+                                    <instruction>Wyb&#xF3;r ze s&#x142;ownika: Prawa autorskie
+
+W przypadku statusu:
+1. MHF - w&#x142;a&#x15B;cicielem licencji - przed u&#x17C;yciem utworu nale&#x17C;y zapozna&#x107; si&#x119; z warunkami licencji. 
+2. MHF - w&#x142;a&#x15B;cicielem praw - przed u&#x17C;yciem utworu nale&#x17C;y zapozna&#x107; si&#x119; z zakresem przeniesionych praw. 
+3. Prawa zastrze&#x17C;one - brak mo&#x17C;liwo&#x15B;ci u&#x17C;ycia utworu poza przypadkami dozwolonego u&#x17C;ytku.
+4. Utw&#xF3;r w domenie publicznej - mo&#x17C;liwo&#x15B;&#x107; u&#x17C;ycia utworu na wszystkich polach eksploatacji pod warunkiem poszanowania autorskich praw osobistych.</instruction>
+                                </field>
+                                <field>
+                                    <name>lawsexpiationdate</name>
+                                    <label>
+                                        <pl>Data wyga&#x15B;niecia praw</pl>
+                                        <en />
+                                    </label>
+                                    <order>2</order>
+                                    <type>datesingle</type>
+                                    <dictionary />
+                                    <require>0</require>
+                                    <sort />
+                                    <sortpath />
+                                    <fulltext />
+                                    <write>0</write>
+                                    <limit>0</limit>
+                                    <complex>0</complex>
+                                    <instruction>W wi&#x119;kszo&#x15B;ci przypadk&#xF3;w prawa autorskie maj&#x105;tkowe wygasaj&#x105; z up&#x142;ywem 70 lat od &#x15B;mierci tw&#xF3;rcy. Okres ten up&#x142;ywa z ko&#x144;cem roku, czyli 31 grudnia.
+
+Ustawa o prawie autorskim i prawach pokrewnych:
+Art. 36. Z zastrze&#x17C;eniem wyj&#x105;tk&#xF3;w przewidzianych w ustawie, autorskie prawa maj&#x105;tkowe gasn&#x105; z up&#x142;ywem lat siedemdziesi&#x119;ciu:
+1) od &#x15B;mierci tw&#xF3;rcy, a do utwor&#xF3;w wsp&#xF3;&#x142;autorskich &#x2013; od &#x15B;mierci wsp&#xF3;&#x142;tw&#xF3;rcy, kt&#xF3;ry prze&#x17C;y&#x142; pozosta&#x142;ych;
+2) w odniesieniu do utworu, kt&#xF3;rego tw&#xF3;rca nie jest znany &#x2013; od daty pierwszego rozpowszechnienia, chyba &#x17C;e pseudonim nie pozostawia w&#x105;tpliwo&#x15B;ci co do to&#x17C;samo&#x15B;ci autora lub je&#x17C;eli autor ujawni&#x142; swoj&#x105; to&#x17C;samo&#x15B;&#x107;;
+3) w odniesieniu do utworu, do kt&#xF3;rego autorskie prawa maj&#x105;tkowe przys&#x142;uguj&#x105; z mocy ustawy innej osobie ni&#x17C; tw&#xF3;rca &#x2013; od daty rozpowszechnienia utworu, a gdy utw&#xF3;r nie zosta&#x142; rozpowszechniony &#x2013; od daty jego ustalenia;
+4) w odniesieniu do utworu audiowizualnego &#x2013; od &#x15B;mierci najp&#xF3;&#x17A;niej zmar&#x142;ej z wymienionych os&#xF3;b: g&#x142;&#xF3;wnego re&#x17C;ysera, autora scenariusza, autora
+dialog&#xF3;w, kompozytora muzyki skomponowanej do utworu audiowizualnego;
+5) w odniesieniu do utworu s&#x142;owno-muzycznego, je&#x17C;eli utw&#xF3;r s&#x142;owny i utw&#xF3;r muzyczny zosta&#x142;y stworzone specjalnie dla danego utworu s&#x142;owno-
+-muzycznego &#x2013; od &#x15B;mierci p&#xF3;&#x17A;niej zmar&#x142;ej z wymienionych os&#xF3;b: autora utworu s&#x142;ownego albo kompozytora utworu muzycznego.
+Art. 37. Je&#x17C;eli bieg terminu wyga&#x15B;ni&#x119;cia autorskich praw maj&#x105;tkowych rozpoczyna si&#x119; od rozpowszechnienia utworu, a utw&#xF3;r rozpowszechniono
+w cz&#x119;&#x15B;ciach, odcinkach, fragmentach lub wk&#x142;adkach, bieg terminu liczy si&#x119; oddzielnie od daty rozpowszechnienia ka&#x17C;dej z wymienionych cz&#x119;&#x15B;ci.
+Art. 38. (uchylony)
+Art. 39. Czas trwania autorskich praw maj&#x105;tkowych liczy si&#x119; w latach pe&#x142;nych nast&#x119;puj&#x105;cych po roku, w kt&#xF3;rym nast&#x105;pi&#x142;o zdarzenie, od kt&#xF3;rego zaczyna si&#x119; bieg termin&#xF3;w okre&#x15B;lonych w art. 36 i art. 37.</instruction>
+                                </field>
+                                <field>
+                                    <name>lawsowner</name>
+                                    <label>
+                                        <pl>Dysponent praw</pl>
+                                        <en />
+                                    </label>
+                                    <order>3</order>
+                                    <type>singledict</type>
+                                    <dictionary>copyrightperson</dictionary>
+                                    <require>0</require>
+                                    <sort />
+                                    <sortpath />
+                                    <fulltext />
+                                    <write>0</write>
+                                    <limit>0</limit>
+                                    <complex>0</complex>
+                                    <instruction>Wyb&#xF3;r ze s&#x142;ownika: Dysponent praw.
+
+Nale&#x17C;y wype&#x142;ni&#x107; w przypadku ogranicze&#x144; w korzystaniu z utworu przez Muzeum lub osoby trzecie, wybieraj&#x105;c nazwisko osoby, z kt&#xF3;r&#x105; nale&#x17C;y skontaktowa&#x107; si&#x119; w celu uzyskania licencji na korzystanie z utworu.</instruction>
+                                </field>
+                                <field>
+                                    <name>contracttype</name>
+                                    <label>
+                                        <pl>Rodzaj umowy</pl>
+                                        <en />
+                                    </label>
+                                    <order>4</order>
+                                    <type>singledict</type>
+                                    <dictionary>copyrightcontracttype</dictionary>
+                                    <require>0</require>
+                                    <sort />
+                                    <sortpath />
+                                    <fulltext />
+                                    <write>0</write>
+                                    <limit>0</limit>
+                                    <complex>0</complex>
+                                    <instruction>Wyb&#xF3;r ze s&#x142;ownika: Rodzaj umowy.</instruction>
+                                </field>
+                                <field>
+                                    <name>contractnumber</name>
+                                    <label>
+                                        <pl>Numer umowy</pl>
+                                        <en />
+                                    </label>
+                                    <order>5</order>
+                                    <type>single</type>
+                                    <dictionary />
+                                    <require>0</require>
+                                    <sort />
+                                    <sortpath />
+                                    <fulltext />
+                                    <write>0</write>
+                                    <limit>0</limit>
+                                    <complex>0</complex>
+                                    <instruction>Nale&#x17C;y wpisa&#x107; numer umowy, zgodnie z instrukcj&#x105; kancelaryjn&#x105;.</instruction>
+                                </field>
+                                <field>
+                                    <name>contractdate</name>
+                                    <label>
+                                        <pl>Data umowy</pl>
+                                        <en />
+                                    </label>
+                                    <order>6</order>
+                                    <type>datesingle</type>
+                                    <dictionary />
+                                    <require>0</require>
+                                    <sort />
+                                    <sortpath />
+                                    <fulltext />
+                                    <write>0</write>
+                                    <limit>0</limit>
+                                    <complex>0</complex>
+                                    <instruction>Procedura kontroli praw albo wpis danych</instruction>
+                                </field>
+                                <field>
+                                    <name>lawsscope</name>
+                                    <label>
+                                        <pl>Zakres udzielonych praw</pl>
+                                        <en />
+                                    </label>
+                                    <order>7</order>
+                                    <type>multidict</type>
+                                    <dictionary>copyrightscope</dictionary>
+                                    <require>0</require>
+                                    <sort />
+                                    <sortpath />
+                                    <fulltext />
+                                    <write>0</write>
+                                    <limit>0</limit>
+                                    <complex>0</complex>
+                                    <instruction>Wyb&#xF3;r ze s&#x142;ownika: zakres praw.
+ 
+Prawo do korzystania z utworu na wszystkich polach eksploatacji obejmuje:
+a.	utrwalanie i zwielokrotnianie utworu dowoln&#x105; technik&#x105; w tym m. in. technik&#x105; drukarsk&#x105;, reprograficzn&#x105;, zapisu magnetycznego, technik&#x105; cyfrow&#x105; lub jak&#x105;kolwiek inn&#x105; technik&#x105;,
+b.	wprowadzanie do obrotu, 
+c.	wprowadzanie do pami&#x119;ci komputera oraz publicznego udost&#x119;pniania tak, aby ka&#x17C;dy m&#xF3;g&#x142; mie&#x107; dost&#x119;p do utworu w miejscu i w czasie przez siebie wybranym (m.in. udost&#x119;pniania on-line),
+d.	publiczne odtwarzania, wy&#x15B;wietlania,
+e.	wystawianie,
+f.	u&#x17C;yczanie i najem orygina&#x142;&#xF3;w oraz egzemplarzy stworzonych zgodnie z umow&#x105;,
+g.	nadawanie i remitowanie dowoln&#x105; technik&#x105;.</instruction>
+                                </field>
+                                <field>
+                                    <name>contractcomment</name>
+                                    <label>
+                                        <pl>Uwagi/Warunki</pl>
+                                        <en />
+                                    </label>
+                                    <order>8</order>
+                                    <type>singlemultilang</type>
+                                    <dictionary />
+                                    <require>0</require>
+                                    <sort />
+                                    <sortpath />
+                                    <fulltext />
+                                    <write>0</write>
+                                    <limit>0</limit>
+                                    <complex>0</complex>
+                                    <instruction>Wpis danych.
+
+Uszczeg&#xF3;&#x142;owienie zakresu udzielonych praw lub wskazanie dodatkowych warunk&#xF3;w zawartych w umowie, zwi&#x105;zanych np. z tre&#x15B;ci&#x105; noty copyrightowej.</instruction>
+                                </field>
+                                <field>
+                                    <name>imagerestrictions</name>
+                                    <label>
+                                        <pl>Wizerunek - ograniczenia</pl>
+                                        <en />
+                                    </label>
+                                    <order>9</order>
+                                    <type>checkbox</type>
+                                    <dictionary />
+                                    <require>0</require>
+                                    <sort />
+                                    <sortpath />
+                                    <fulltext />
+                                    <write>0</write>
+                                    <limit>0</limit>
+                                    <complex>0</complex>
+                                    <instruction>Zaznaczenie pola jedynie w przypadku istnienia ogranicze&#x144; w korzystaniu z wizerunku.</instruction>
+                                </field>
+                                <field>
+                                    <name>imagecomment</name>
+                                    <label>
+                                        <pl>Komentarz</pl>
+                                        <en />
+                                    </label>
+                                    <order>10</order>
+                                    <type>singlemultilang</type>
+                                    <dictionary />
+                                    <require>0</require>
+                                    <sort />
+                                    <sortpath />
+                                    <fulltext />
+                                    <write>0</write>
+                                    <limit>0</limit>
+                                    <complex>0</complex>
+                                    <instruction>Wpis informacji dotycz&#x105;cych ogranicze&#x144; z korzystania z utworu wynikaj&#x105;cych praw do wizerunku.</instruction>
+                                </field>
+                            </fields>
+                        </clusters>
+                    </bookmark>
+                    <bookmark>
+                        <id>324</id>
+                        <name>online</name>
+                        <label>
+                            <pl>OnLine</pl>
+                            <en />
+                        </label>
+                        <order>7</order>
+                        <type>1</type>
+                        <clusters>
+                            <cluster>
+                                <id>667</id>
+                                <name>online</name>
+                                <label>
+                                    <pl>OnLine</pl>
+                                    <en>OnLine</en>
+                                </label>
+                                <order>1</order>
+                            </cluster>
+                            <fields>
+                                <field>
+                                    <name>readyforpublication</name>
+                                    <label>
+                                        <pl>Gotowy do publikacji</pl>
+                                        <en />
+                                    </label>
+                                    <order>1</order>
+                                    <type>checkbox</type>
+                                    <dictionary />
+                                    <require>0</require>
+                                    <sort />
+                                    <sortpath />
+                                    <fulltext />
+                                    <write>0</write>
+                                    <limit>0</limit>
+                                    <complex>0</complex>
+                                    <instruction>Wype&#x142;nia Dzia&#x142; Inwentarzy
+zaznaczenie
+
+Wskazanie gotowo&#x15B;ci karty obiektu do udost&#x119;pnienia online.
+Pole zaznaczane po weryfikacji poprawno&#x15B;ci i kompletno&#x15B;ci wszystkich danych w podstawowej formatce z danymi obiektu w katalogu online, zapisanych w polach: numer inwentarzowy, tw&#xF3;rcy, nazwa, technika, rodzaj, materia&#x142;, wymiary, datowanie, miejsce administracyjne, miejsce geograficzne, status. 
+
+Brak zaznaczenia pola oznacza brak gotowo&#x15B;ci karty obiektu do publikacji.</instruction>
+                                </field>
+                                <field>
+                                    <name>onlinefields</name>
+                                    <label>
+                                        <pl>Pola do eksportu</pl>
+                                        <en />
+                                    </label>
+                                    <order>2</order>
+                                    <type>multidict</type>
+                                    <dictionary>onlinefields</dictionary>
+                                    <require>0</require>
+                                    <sort />
+                                    <sortpath />
+                                    <fulltext />
+                                    <write>0</write>
+                                    <limit>0</limit>
+                                    <complex>0</complex>
+                                    <instruction>Wype&#x142;nia Dzia&#x142; Inwentarzy
+Wyb&#xF3;r odpowiednich p&#xF3;l.
+
+Wskazanie p&#xF3;l z danymi dodatkowymi, kt&#xF3;re mog&#x105; zosta&#x107; udost&#x119;pnione w katalogu online.
+Przyk&#x142;adowe pola: skr&#xF3;cony opis, opis, historia obiektu, analogie, sygnatury, oznaczenia, noty popularnonaukowe, wystawy, bibliografia.</instruction>
+                                </field>
+                                <field>
+                                    <name>tags</name>
+                                    <label>
+                                        <pl>Tagi</pl>
+                                        <en />
+                                    </label>
+                                    <order>3</order>
+                                    <type>multidict</type>
+                                    <dictionary>tags</dictionary>
+                                    <require>0</require>
+                                    <sort />
+                                    <sortpath />
+                                    <fulltext />
+                                    <write>0</write>
+                                    <limit>0</limit>
+                                    <complex>0</complex>
+                                    <instruction>Wype&#x142;nia opracowuj&#x105;cy
+Wyb&#xF3;r ze s&#x142;ownika: Tagi
+
+Pole wielokrotne, umo&#x17C;liwiaj&#x105;ce wyb&#xF3;r wi&#x119;cej ni&#x17C; jednego has&#x142;a.</instruction>
+                                </field>
+                                <field>
+                                    <name>online</name>
+                                    <label>
+                                        <pl>Online z wizerunkiem</pl>
+                                        <en />
+                                    </label>
+                                    <order>4</order>
+                                    <type>checkbox</type>
+                                    <dictionary />
+                                    <require>0</require>
+                                    <sort>online</sort>
+                                    <sortpath />
+                                    <fulltext />
+                                    <write>0</write>
+                                    <limit>0</limit>
+                                    <complex>0</complex>
+                                    <instruction>Wype&#x142;nia Dzia&#x142; Inwentarzy
+zaznaczenie
+
+Wskazanie mo&#x17C;liwo&#x15B;ci udost&#x119;pnienia obiektu online wraz z wizerunkiem.
+
+Zaznaczenie tego pola odnosi si&#x119; jedynie do mo&#x17C;liwo&#x15B;ci publikacji obiektu z wizerunkiem w katalogu online MuFo; nie oznacza automatycznie, &#x17C;e obiekt mo&#x17C;e by&#x107; udost&#x119;pniany osobom trzecim do korzystania na dowolnym polu eksploatacji. Zakres ogranicze&#x144; i uprawnie&#x144; wynikaj&#x105;cych z praw autorskich powinien zosta&#x107; szczeg&#xF3;&#x142;owo wskazany w zak&#x142;adce Prawa. 
+
+Brak zaznaczenia pola oznacza brak mo&#x17C;liwo&#x15B;ci publikacji obiektu z wizerunkiem lub brak rozpoznania prawnego.</instruction>
+                                </field>
+                                <field>
+                                    <name>onlinedate</name>
+                                    <label>
+                                        <pl>Data udost&#x119;pnienia on-line z wizerunkiem</pl>
+                                        <en />
+                                    </label>
+                                    <order>5</order>
+                                    <type>datesingle</type>
+                                    <dictionary />
+                                    <require>0</require>
+                                    <sort />
+                                    <sortpath />
+                                    <fulltext />
+                                    <write>0</write>
+                                    <limit>0</limit>
+                                    <complex>0</complex>
+                                    <instruction>Wype&#x142;nia Dzia&#x142; Inwentarzy
+wyb&#xF3;r daty z kalendarza
+
+Data, od kt&#xF3;rej obiekt mo&#x17C;e zosta&#x107; udost&#x119;pniony w katalogu online wraz z wizerunkiem lub data wype&#x142;nienia karty (w przypadku np. obiekt&#xF3;w znajduj&#x105;cych si&#x119; w domenie publicznej).</instruction>
+                                </field>
+                                <field>
+                                    <name>onlinerecommended</name>
+                                    <label>
+                                        <pl>Polecane</pl>
+                                        <en />
+                                    </label>
+                                    <order>6</order>
+                                    <type>checkbox</type>
+                                    <dictionary />
+                                    <require>0</require>
+                                    <sort />
+                                    <sortpath />
+                                    <fulltext />
+                                    <write>0</write>
+                                    <limit>0</limit>
+                                    <complex>0</complex>
+                                    <instruction>Wype&#x142;nia opracowuj&#x105;cy
+Zaznaczenie
+
+Oznaczone karty dost&#x119;pne s&#x105; w zak&#x142;adce katalogu online pod t&#x105; sam&#x105; nazw&#x105;. S&#x142;u&#x17C;y ona prezentacji obiekt&#xF3;w najciekawszych, wartych uwagi, zaskakuj&#x105;cych czy w jaki&#x15B; spos&#xF3;b odznaczaj&#x105;cych si&#x119; na tle ca&#x142;ej kolekcji (np. swoj&#x105; histori&#x105;).</instruction>
+                                </field>
+                                <field>
+                                    <name>subfolder</name>
+                                    <label>
+                                        <pl>Podkategoria</pl>
+                                        <en />
+                                    </label>
+                                    <order>7</order>
+                                    <type>singledict</type>
+                                    <dictionary>subfloders</dictionary>
+                                    <require>0</require>
+                                    <sort />
+                                    <sortpath />
+                                    <fulltext />
+                                    <write>0</write>
+                                    <limit>0</limit>
+                                    <complex>0</complex>
+                                    <instruction>Wype&#x142;nia opracowuj&#x105;cy
+Wyb&#xF3;r ze s&#x142;ownika: Podkategorie Online
+
+Klasyfikacja obiekt&#xF3;w zgodnie z przyj&#x119;t&#x105; w Muzeum Polityk&#x105; gromadzenia zbior&#xF3;w.</instruction>
+                                </field>
+                                <field>
+                                    <name>galtem</name>
+                                    <label>
+                                        <pl>Galeria Tematyczna</pl>
+                                        <en />
+                                    </label>
+                                    <order>8</order>
+                                    <type>multidict</type>
+                                    <dictionary>galtem</dictionary>
+                                    <require>0</require>
+                                    <sort />
+                                    <sortpath />
+                                    <fulltext />
+                                    <write>0</write>
+                                    <limit>0</limit>
+                                    <complex>0</complex>
+                                    <instruction />
+                                </field>
+                                <field>
+                                    <name>onlinepromoted</name>
+                                    <label>
+                                        <pl>Promowane</pl>
+                                        <en />
+                                    </label>
+                                    <order>9</order>
+                                    <type>checkbox</type>
+                                    <dictionary />
+                                    <require>0</require>
+                                    <sort>onlinepromoted</sort>
+                                    <sortpath />
+                                    <fulltext />
+                                    <write>0</write>
+                                    <limit>0</limit>
+                                    <complex>0</complex>
+                                    <instruction />
+                                </field>
+                            </fields>
+                        </clusters>
+                    </bookmark>
+                    <bookmark>
+                        <id>332</id>
+                        <name>spektakle</name>
+                        <label>
+                            <pl>Spektakle</pl>
+                            <en />
+                        </label>
+                        <order>2</order>
+                        <type>0</type>
+                        <clusters />
+                    </bookmark>
+                </bookmarks>
+            </division>
+            <division>
+                <_id>633fdd1d483c9</_id>
+                <name>spektakle</name>
+                <prefix>sp</prefix>
+                <number>2</number>
+                <label>
+                    <pl>Spektakle</pl>
+                    <en />
+                </label>
+                <duplicate>62cd24dd7ca5c</duplicate>
+                <group>5</group>
+                <bookmarks>
+                    <bookmark>
+                        <id>325</id>
+                        <name>start</name>
+                        <label>
+                            <pl>Dane podstawowe</pl>
+                            <en>Dane podstawowe</en>
+                        </label>
+                        <order>1</order>
+                        <type>1</type>
+                        <clusters>
+                            <cluster>
+                                <id>668</id>
+                                <name>date</name>
+                                <label>
+                                    <pl>Datowanie</pl>
+                                    <en>Date</en>
+                                </label>
+                                <order>3</order>
+                            </cluster>
+                            <fields>
+                                <field>
+                                    <name>createdates</name>
+                                    <label>
+                                        <pl>Datowanie</pl>
+                                        <en />
+                                    </label>
+                                    <order>1</order>
+                                    <type>date</type>
+                                    <dictionary />
+                                    <require>1</require>
+                                    <sort>dates</sort>
+                                    <sortpath />
+                                    <fulltext />
+                                    <write>0</write>
+                                    <limit>0</limit>
+                                    <complex>0</complex>
+                                    <instruction>Wype&#x142;nia opracowuj&#x105;cy
+wyb&#xF3;r daty z kalendarza 
+
+Nale&#x17C;y poda&#x107; dat&#x119; z dok&#x142;adno&#x15B;ci&#x105; przynajmniej do roku.
+
+W przypadku, gdy znana jest dok&#x142;adna data powstania obiektu, Data od jest to&#x17C;sama z Dat&#x105; do.
+
+Przyk&#x142;ad:
+Obiekt powsta&#x142;y w 1905 r. b&#x119;dzie posiada&#x142; zapis:
+Data od: 1905
+Data do: 1905</instruction>
+                                </field>
+                                <field>
+                                    <name>createdatescomment</name>
+                                    <label>
+                                        <pl>Komentarz</pl>
+                                        <en />
+                                    </label>
+                                    <order>2</order>
+                                    <type>htmlmultilang</type>
+                                    <dictionary />
+                                    <require>0</require>
+                                    <sort>createdatescomment</sort>
+                                    <sortpath />
+                                    <fulltext />
+                                    <write>0</write>
+                                    <limit>0</limit>
+                                    <complex>0</complex>
+                                    <instruction>Wype&#x142;nia opracowuj&#x105;cy
+wpis danych: tekst
+
+Informacje uzupe&#x142;niaj&#x105;ce dotycz&#x105;ce podstaw datowania.
+Uzupe&#x142;niane tylko w&#xF3;wczas, je&#x15B;li nie widniej&#x105; w innym polach karty (jak np. daty dzia&#x142;alno&#x15B;ci zak&#x142;adu fotograficznego).
+
+Przyk&#x142;ad:
+Fotografia wykonana przed &#x15B;mierci&#x105; portretowanego w 1910 r.
+Produkcja sfotografowanego samochodu rozpocz&#x119;&#x142;a si&#x119; w 1925 r.</instruction>
+                                </field>
+                            </fields>
+                            <cluster>
+                                <id>669</id>
+                                <name>name</name>
+                                <label>
+                                    <pl>Nazwa</pl>
+                                    <en>Name</en>
+                                </label>
+                                <order>2</order>
+                            </cluster>
+                            <fields>
+                                <field>
+                                    <name>name</name>
+                                    <label>
+                                        <pl>Nazwa</pl>
+                                        <en>Name</en>
+                                    </label>
+                                    <order>1</order>
+                                    <type>singlemultilang</type>
+                                    <dictionary />
+                                    <require>1</require>
+                                    <sort>name</sort>
+                                    <sortpath />
+                                    <fulltext>name</fulltext>
+                                    <write>0</write>
+                                    <limit>80</limit>
+                                    <complex>0</complex>
+                                    <instruction>Wype&#x142;nia opracowuj&#x105;cy
+wpis danych
+
+Tytu&#x142; autorski lub zwi&#x119;z&#x142;e okre&#x15B;lenie przedmiotu przedstawienia. 
+
+Spos&#xF3;b zapisu:
+Wpis nale&#x17C;y rozpoczyna&#x107; wielk&#x105; liter&#x105;, nie nale&#x17C;y ko&#x144;czy&#x107; go kropk&#x105;. Kolejne dane, wpisywane w miar&#x119; mo&#x17C;liwo&#x15B;ci w formach mianownikowych, nale&#x17C;y oddziela&#x107; przecinkami. 
+Wpis powinien by&#x107; poprawny j&#x119;zykowo. Autorskie opisy zawieraj&#x105;ce b&#x142;&#x119;dy powinny by&#x107; cytowane w brzmieniu oryginalnym w polu Opis, z u&#x17C;yciem cudzys&#x142;owu. 
+
+Maksymalna ilo&#x15B;&#x107; znak&#xF3;w dla wpisu (ze spacjami) &#x2013; 80.
+
+Uwagi:
+&#x2022; w przypadku okre&#x15B;lenia przedmiotu przedstawienia (tematu) przez opracowuj&#x105;cego kart&#x119; w zwi&#x105;zku z brakiem tytu&#x142;u odautorskiego, temat ten powinien uwzgl&#x119;dnia&#x107; przede wszystkim dominuj&#x105;cy motyw przedstawienia, to jest kolejno:
+1. nazw&#x119; w&#x142;asn&#x105; osoby lub przedmiotu albo nazw&#x119; geograficzn&#x105; (miejsce podajemy w tym polu tylko wtedy, kiedy jest ono r&#xF3;wnie&#x17C; tematem zdj&#x119;cia)
+2. zwi&#x119;z&#x142;&#x105; informacj&#x119; identyfikuj&#x105;c&#x105; przedstawienie, 
+
+Przyk&#x142;ad:
+M&#x142;oda kobieta, portret (nie: n.n. portret); 
+Zofia Kowalska, portret; 
+Kobieta i m&#x119;&#x17C;czyzna na spacerze (nie: Na spacerze); Tableau Zespo&#x142;u Szk&#xF3;&#x142; Mechanicznych w Krakowie
+Racib&#xF3;rz, rynek, ko&#x15B;ci&#xF3;&#x142; &#x15B;w. Jakuba
+
+&#x2022;	tytu&#x142; lub nazwa powinny by&#x107; podawane w pe&#x142;nym brzmieniu, bez skr&#xF3;t&#xF3;w, 
+&#x2022;	tytu&#x142;u autorskiego nie nale&#x17C;y myli&#x107; z zapisanym odr&#x119;cznie komentarzem, kt&#xF3;ry powinien zosta&#x107; zamieszczony w polu Opis. Tytu&#x142;em zapisanym w cudzys&#x142;owie powinien by&#x107; tak&#x17C;e drukowany zapis na ok&#x142;adce albumu, teki, np. &#x201E;Widoki Warszawy&#x201D; czy "Souvenir de Vilna",
+&#x2022;	nale&#x17C;y zwr&#xF3;ci&#x107; uwag&#x119; czy zapis autorski (lub inny) na rewersie fotografii jest tytu&#x142;em zdj&#x119;cia czy tylko identyfikacj&#x105; miejsca lub os&#xF3;b.
+
+Przyk&#x142;ad 1: 
+Podpis &#x201E;Wujek Staszek&#x201D; powinien znale&#x17A;&#x107; si&#x119; w polu Opis.
+Przyk&#x142;ad 2: 
+Tytu&#x142;y wpisane na odwrociu fotografii (np. fotografii Bu&#x142;hak&#xF3;w), b&#x119;d&#x105;ce identyfikacj&#x105; miejsca, traktowane powinny by&#x107; jako takie, a nie jako tytu&#x142; autorski (chyba &#x17C;e spos&#xF3;b zapisu &#x15B;wiadczy o tym, &#x17C;e zosta&#x142;a im nadana rola tytu&#x142;u, np. dla potrzeb wystawy czy publikacji). Powinny one zosta&#x107; przytoczone w cudzys&#x142;owie w polu Szczeg&#xF3;&#x142;owy opis. 
+&#x2022;	nie nale&#x17C;y w polu Nazwa umieszcza&#x107; okre&#x15B;le&#x144; typu: fotografia, fotografia pozytyw, klisza szklana, poczt&#xF3;wka (te okre&#x15B;lenia znajd&#x105; si&#x119; w innych polach), uwaga ta nie dotyczy albumu; 
+&#x2022;	gdy mamy do czynienia z reprodukcj&#x105; fotograficzn&#x105; trzeba to bezwzgl&#x119;dnie zaznaczy&#x107; w polu Nazwa: reprodukcja malarstwa, reprodukcja grafiki, reprodukcja fotografii, itd. 
+
+Tytu&#x142; reprodukowanego dzie&#x142;a powinien zosta&#x107; przytoczony w cudzys&#x142;owie.
+Przyk&#x142;ady: 
+reprodukcja malarstwa, Rafael, &#x201E;Madonna&#x201D;; reprodukcja fotografii, W. H. F. Talbot
+
+Uwaga: 
+w przypadku fotografii reprodukowanej w formie poczt&#xF3;wki, slajdu nie stosujemy zapisu: reprodukcja fotografii.
+&#x2022;	w przypadku muzeali&#xF3;w technicznych podaje si&#x119; rodzaj i nazw&#x119; handlow&#x105; wyrobu lub gdy jej brak najwa&#x17C;niejsze cechy przedmiotu,
+
+Przyk&#x142;ad:
+aparat fotograficzny Leica II
+aparat fotograficzny podr&#xF3;&#x17C;ny typu &#x201E;francuskiego&#x201D;
+aparat fotograficzny sk&#x142;adany 9 x 12 cm
+&#x2022;	w przypadku akcesori&#xF3;w fotograficznych lub kinematograficznych podajemy szczeg&#xF3;&#x142;owe okre&#x15B;lenie (nie zapis: &#x201E;akcesorium&#x201D; )
+
+Przyk&#x142;ad: 
+uchwyt pistoletowy 
+pier&#x15B;cie&#x144; M 77 
+tank fotograficzny</instruction>
+                                </field>
+                                <field>
+                                    <name>shortdescription</name>
+                                    <label>
+                                        <pl>Skr&#xF3;cony opis</pl>
+                                        <en>Skr&#xF3;cony opis</en>
+                                    </label>
+                                    <order>2</order>
+                                    <type>htmlmultilang</type>
+                                    <dictionary />
+                                    <require>1</require>
+                                    <sort>shortdescription</sort>
+                                    <sortpath />
+                                    <fulltext>shortdescription</fulltext>
+                                    <write>0</write>
+                                    <limit>250</limit>
+                                    <complex>0</complex>
+                                    <instruction />
+                                </field>
+                                <field>
+                                    <name>description</name>
+                                    <label>
+                                        <pl>Opis</pl>
+                                        <en>Description</en>
+                                    </label>
+                                    <order>3</order>
+                                    <type>htmlmultilang</type>
+                                    <dictionary />
+                                    <require>0</require>
+                                    <sort>description</sort>
+                                    <sortpath />
+                                    <fulltext>description</fulltext>
+                                    <write>0</write>
+                                    <limit>0</limit>
+                                    <complex>0</complex>
+                                    <instruction>Wype&#x142;nia opracowuj&#x105;cy
+wpis danych
+
+Rozwini&#x119;cie i uszczeg&#xF3;&#x142;owienie informacji zawartych w polu Nazwa i Skr&#xF3;cony opis.
+
+Spos&#xF3;b zapisu:
+Opis nale&#x17C;y formu&#x142;owa&#x107; zwi&#x119;&#x17A;le, przechodz&#x105;c od og&#xF3;&#x142;u do szczeg&#xF3;&#x142;u, w miar&#x119; mo&#x17C;liwo&#x15B;ci podaj&#x105;c informacje w mianowniku (niezb&#x119;dne dla wyszukiwania danych).
+Wpis nale&#x17C;y rozpoczyna&#x107; wielk&#x105; liter&#x105; i zako&#x144;czy&#x107; kropk&#x105;.
+Cytowane teksty (z zachowaniem oryginalnej pisowni, b&#x142;&#x119;dami j&#x119;zykowymi itp.) nale&#x17C;y zamieszcza&#x107; w cudzys&#x142;owie.
+
+Uwagi:
+Nale&#x17C;y stara&#x107; si&#x119; nie powtarza&#x107; informacji z pola Skr&#xF3;cony opis. 
+Opis rewersu fotografii nale&#x17C;y rozpocz&#x105;&#x107; od nowej linijki.
+W polu mog&#x105; zosta&#x107; zawarte tak&#x17C;e dodatkowe informacje, np. historyczne, odnosz&#x105;ce si&#x119; do fotografowanego obiektu.</instruction>
+                                </field>
+                                <field>
+                                    <name>keywords</name>
+                                    <label>
+                                        <pl>S&#x142;owa kluczowe</pl>
+                                        <en />
+                                    </label>
+                                    <order>4</order>
+                                    <type>multidict</type>
+                                    <dictionary>keywords</dictionary>
+                                    <require>0</require>
+                                    <sort>keywords</sort>
+                                    <sortpath />
+                                    <fulltext />
+                                    <write>0</write>
+                                    <limit>0</limit>
+                                    <complex>0</complex>
+                                    <instruction>Wype&#x142;nia opracowuj&#x105;cy
+wyb&#xF3;r ze s&#x142;ownika: S&#x142;owa kluczowe
+
+S&#x142;ownik hierarchiczny hase&#x142; odnosz&#x105;cych si&#x119; do tematu przedstawienia (zobrazowanego przedmiotu, zjawiska, wydarzenia, poj&#x119;cia). 
+Pole wielokrotne, umo&#x17C;liwiaj&#x105;ce wyb&#xF3;r kilku hase&#x142;. Wyb&#xF3;r has&#x142;a umieszczonego ni&#x17C;ej w hierarchii umo&#x17C;liwia wyszukanie obiektu tak&#x17C;e po kategorii wy&#x17C;szej, og&#xF3;lniejszej.
+
+Uwagi:
+W przypadku obiekt&#xF3;w typu reprodukcje rysunku lub malarstwa stosowane powinno by&#x107; tylko has&#x142;o Rysunek lub Malarstwo; nie nale&#x17C;y opisywa&#x107; go has&#x142;ami odnosz&#x105;cymi si&#x119; do przedstawionej na obrazie ikonografii, poniewa&#x17C; zdj&#x119;cie przedstawia rysunek lub obraz.
+Nie nale&#x17C;y wpisywa&#x107; s&#x142;owa &#x2018;&#x201D;fotografia&#x201D; przy opisie fotografii. Zapis ten stosujemy tylko wtedy, gdy na zdj&#x119;ciu pokazana jest fotografia, fotograf lub aparat fotograficzny, itp.
+Nale&#x17C;y wybiera&#x107; wy&#x142;&#x105;cznie takie has&#x142;a, kt&#xF3;re w wyra&#x17A;ny spos&#xF3;b odnosz&#x105; si&#x119; do ikonografii opisywanego przedmiotu.</instruction>
+                                </field>
+                            </fields>
+                            <cluster>
+                                <id>670</id>
+                                <name>number</name>
+                                <label>
+                                    <pl>Numer</pl>
+                                    <en>Number</en>
+                                </label>
+                                <order>1</order>
+                            </cluster>
+                            <fields>
+                                <field>
+                                    <name>inventorynumber</name>
+                                    <label>
+                                        <pl>ID</pl>
+                                        <en>Numer inwentarzowy</en>
+                                    </label>
+                                    <order>1</order>
+                                    <type>single</type>
+                                    <dictionary />
+                                    <require>1</require>
+                                    <sort>inventorynumber</sort>
+                                    <sortpath />
+                                    <fulltext />
+                                    <write>0</write>
+                                    <limit>0</limit>
+                                    <complex>0</complex>
+                                    <instruction />
+                                </field>
+                            </fields>
+                            <cluster>
+                                <id>673</id>
+                                <name>place</name>
+                                <label>
+                                    <pl>Miejsce</pl>
+                                    <en>Place</en>
+                                </label>
+                                <order>4</order>
+                            </cluster>
+                            <fields>
+                                <field>
+                                    <name>city</name>
+                                    <label>
+                                        <pl>Miasto</pl>
+                                        <en />
+                                    </label>
+                                    <order>1</order>
+                                    <type>singledict</type>
+                                    <dictionary>cities</dictionary>
+                                    <require>0</require>
+                                    <sort />
+                                    <sortpath />
+                                    <fulltext />
+                                    <write>0</write>
+                                    <limit>0</limit>
+                                    <complex>0</complex>
+                                    <instruction />
+                                </field>
+                            </fields>
+                            <cluster>
+                                <id>689</id>
+                                <name>students</name>
+                                <label>
+                                    <pl>Studenci</pl>
+                                    <en />
+                                </label>
+                                <order>5</order>
+                            </cluster>
+                            <fields>
+                                <field>
+                                    <name>students</name>
+                                    <label>
+                                        <pl>Studenci</pl>
+                                        <en />
+                                    </label>
+                                    <order>1</order>
+                                    <type>relation</type>
+                                    <dictionary>students</dictionary>
+                                    <require>0</require>
+                                    <sort />
+                                    <sortpath />
+                                    <fulltext />
+                                    <write>0</write>
+                                    <limit>0</limit>
+                                    <complex>0</complex>
+                                    <instruction />
+                                </field>
+                            </fields>
+                        </clusters>
+                    </bookmark>
+                    <bookmark>
+                        <id>326</id>
+                        <name>print</name>
+                        <label>
+                            <pl>Wydrukuj</pl>
+                            <en>Print</en>
+                        </label>
+                        <order>5</order>
+                        <type>0</type>
+                        <clusters>
+                            <cluster>
+                                <id>675</id>
+                                <name>print</name>
+                                <label>
+                                    <pl>Drukuj</pl>
+                                    <en>Print</en>
+                                </label>
+                                <order>1</order>
+                            </cluster>
+                            <fields />
+                        </clusters>
+                    </bookmark>
+                    <bookmark>
+                        <id>327</id>
+                        <name>delete</name>
+                        <label>
+                            <pl>Usu&#x144;</pl>
+                            <en>Delete</en>
+                        </label>
+                        <order>6</order>
+                        <type>0</type>
+                        <clusters>
+                            <cluster>
+                                <id>676</id>
+                                <name>delete</name>
+                                <label>
+                                    <pl>Usu&#x144;</pl>
+                                    <en>Delete</en>
+                                </label>
+                                <order>1</order>
+                            </cluster>
+                            <fields />
+                        </clusters>
+                    </bookmark>
+                    <bookmark>
+                        <id>328</id>
+                        <name>files</name>
+                        <label>
+                            <pl>Pliki</pl>
+                            <en>Pliki</en>
+                        </label>
+                        <order>4</order>
+                        <type>0</type>
+                        <clusters />
+                    </bookmark>
+                    <bookmark>
+                        <id>329</id>
+                        <name>description</name>
+                        <label>
+                            <pl>Dodatkowy opis</pl>
+                            <en />
+                        </label>
+                        <order>2</order>
+                        <type>1</type>
+                        <clusters>
+                            <cluster>
+                                <id>681</id>
+                                <name>keywords</name>
+                                <label>
+                                    <pl>Informacje dodatkowe</pl>
+                                    <en>Informacje dodatkowe</en>
+                                </label>
+                                <order>1</order>
+                            </cluster>
+                            <fields>
+                                <field>
+                                    <name>note</name>
+                                    <label>
+                                        <pl>Nota popularnonaukowa</pl>
+                                        <en />
+                                    </label>
+                                    <order>1</order>
+                                    <type>htmlmultilang</type>
+                                    <dictionary />
+                                    <require>0</require>
+                                    <sort />
+                                    <sortpath />
+                                    <fulltext />
+                                    <write>0</write>
+                                    <limit>0</limit>
+                                    <complex>471</complex>
+                                    <instruction>Wype&#x142;nia opracowuj&#x105;cy
+wpis danych: tekst
+
+Tre&#x15B;&#x107; noty dotycz&#x105;cej obiektu, przygotowanej dla potrzeb opracowania, publikacji itp.</instruction>
+                                </field>
+                                <field>
+                                    <name>noteauthor</name>
+                                    <label>
+                                        <pl>Autor noty</pl>
+                                        <en />
+                                    </label>
+                                    <order>2</order>
+                                    <type>singledict</type>
+                                    <dictionary>developed</dictionary>
+                                    <require>0</require>
+                                    <sort />
+                                    <sortpath />
+                                    <fulltext />
+                                    <write>0</write>
+                                    <limit>0</limit>
+                                    <complex>471</complex>
+                                    <instruction>Wype&#x142;nia opracowuj&#x105;cy
+wyb&#xF3;r ze s&#x142;ownika: Opracowa&#x142;</instruction>
+                                </field>
+                                <field>
+                                    <name>date</name>
+                                    <label>
+                                        <pl>Data wprowadzenia noty</pl>
+                                        <en />
+                                    </label>
+                                    <order>3</order>
+                                    <type>datesingle</type>
+                                    <dictionary />
+                                    <require>0</require>
+                                    <sort />
+                                    <sortpath />
+                                    <fulltext />
+                                    <write>0</write>
+                                    <limit>0</limit>
+                                    <complex>471</complex>
+                                    <instruction>Wype&#x142;nia opracowuj&#x105;cy
+wyb&#xF3;r daty z kalendarza</instruction>
+                                </field>
+                                <field>
+                                    <name>comment</name>
+                                    <label>
+                                        <pl>Komentarz (&#x17A;r&#xF3;d&#x142;o, przeznaczenie noty)</pl>
+                                        <en />
+                                    </label>
+                                    <order>4</order>
+                                    <type>single</type>
+                                    <dictionary />
+                                    <require>0</require>
+                                    <sort />
+                                    <sortpath />
+                                    <fulltext />
+                                    <write>0</write>
+                                    <limit>0</limit>
+                                    <complex>471</complex>
+                                    <instruction>Wype&#x142;nia opracowuj&#x105;cy
+wpis danych: tekst
+
+Dane bibliograficzne publikacji, adres strony internetowej, gdzie zosta&#x142;a nota zamieszczona itp.</instruction>
+                                </field>
+                                <field>
+                                    <name>notegroup</name>
+                                    <label>
+                                        <pl>Noty popularnonaukowe</pl>
+                                        <en />
+                                    </label>
+                                    <order>5</order>
+                                    <type>complex</type>
+                                    <dictionary />
+                                    <require>0</require>
+                                    <sort />
+                                    <sortpath />
+                                    <fulltext />
+                                    <write>0</write>
+                                    <limit>0</limit>
+                                    <complex>0</complex>
+                                    <instruction>Wype&#x142;nia opracowuj&#x105;cy
+wpis danych: tekst
+
+Tre&#x15B;&#x107; noty dotycz&#x105;cej obiektu, przygotowanej dla potrzeb opracowania, publikacji itp.</instruction>
+                                </field>
+                            </fields>
+                        </clusters>
+                    </bookmark>
+                    <bookmark>
+                        <id>330</id>
+                        <name>prawa</name>
+                        <label>
+                            <pl>Prawa</pl>
+                            <en />
+                        </label>
+                        <order>3</order>
+                        <type>1</type>
+                        <clusters>
+                            <cluster>
+                                <id>686</id>
+                                <name>status</name>
+                                <label>
+                                    <pl>Status</pl>
+                                    <en>Status</en>
+                                </label>
+                                <order>1</order>
+                            </cluster>
+                            <fields>
+                                <field>
+                                    <name>copyright</name>
+                                    <label>
+                                        <pl>Status</pl>
+                                        <en />
+                                    </label>
+                                    <order>1</order>
+                                    <type>singledict</type>
+                                    <dictionary>copyrights</dictionary>
+                                    <require>0</require>
+                                    <sort />
+                                    <sortpath />
+                                    <fulltext />
+                                    <write>0</write>
+                                    <limit>0</limit>
+                                    <complex>0</complex>
+                                    <instruction>Wyb&#xF3;r ze s&#x142;ownika: Prawa autorskie
+
+W przypadku statusu:
+1. MHF - w&#x142;a&#x15B;cicielem licencji - przed u&#x17C;yciem utworu nale&#x17C;y zapozna&#x107; si&#x119; z warunkami licencji. 
+2. MHF - w&#x142;a&#x15B;cicielem praw - przed u&#x17C;yciem utworu nale&#x17C;y zapozna&#x107; si&#x119; z zakresem przeniesionych praw. 
+3. Prawa zastrze&#x17C;one - brak mo&#x17C;liwo&#x15B;ci u&#x17C;ycia utworu poza przypadkami dozwolonego u&#x17C;ytku.
+4. Utw&#xF3;r w domenie publicznej - mo&#x17C;liwo&#x15B;&#x107; u&#x17C;ycia utworu na wszystkich polach eksploatacji pod warunkiem poszanowania autorskich praw osobistych.</instruction>
+                                </field>
+                                <field>
+                                    <name>lawsexpiationdate</name>
+                                    <label>
+                                        <pl>Data wyga&#x15B;niecia praw</pl>
+                                        <en />
+                                    </label>
+                                    <order>2</order>
+                                    <type>datesingle</type>
+                                    <dictionary />
+                                    <require>0</require>
+                                    <sort />
+                                    <sortpath />
+                                    <fulltext />
+                                    <write>0</write>
+                                    <limit>0</limit>
+                                    <complex>0</complex>
+                                    <instruction>W wi&#x119;kszo&#x15B;ci przypadk&#xF3;w prawa autorskie maj&#x105;tkowe wygasaj&#x105; z up&#x142;ywem 70 lat od &#x15B;mierci tw&#xF3;rcy. Okres ten up&#x142;ywa z ko&#x144;cem roku, czyli 31 grudnia.
+
+Ustawa o prawie autorskim i prawach pokrewnych:
+Art. 36. Z zastrze&#x17C;eniem wyj&#x105;tk&#xF3;w przewidzianych w ustawie, autorskie prawa maj&#x105;tkowe gasn&#x105; z up&#x142;ywem lat siedemdziesi&#x119;ciu:
+1) od &#x15B;mierci tw&#xF3;rcy, a do utwor&#xF3;w wsp&#xF3;&#x142;autorskich &#x2013; od &#x15B;mierci wsp&#xF3;&#x142;tw&#xF3;rcy, kt&#xF3;ry prze&#x17C;y&#x142; pozosta&#x142;ych;
+2) w odniesieniu do utworu, kt&#xF3;rego tw&#xF3;rca nie jest znany &#x2013; od daty pierwszego rozpowszechnienia, chyba &#x17C;e pseudonim nie pozostawia w&#x105;tpliwo&#x15B;ci co do to&#x17C;samo&#x15B;ci autora lub je&#x17C;eli autor ujawni&#x142; swoj&#x105; to&#x17C;samo&#x15B;&#x107;;
+3) w odniesieniu do utworu, do kt&#xF3;rego autorskie prawa maj&#x105;tkowe przys&#x142;uguj&#x105; z mocy ustawy innej osobie ni&#x17C; tw&#xF3;rca &#x2013; od daty rozpowszechnienia utworu, a gdy utw&#xF3;r nie zosta&#x142; rozpowszechniony &#x2013; od daty jego ustalenia;
+4) w odniesieniu do utworu audiowizualnego &#x2013; od &#x15B;mierci najp&#xF3;&#x17A;niej zmar&#x142;ej z wymienionych os&#xF3;b: g&#x142;&#xF3;wnego re&#x17C;ysera, autora scenariusza, autora
+dialog&#xF3;w, kompozytora muzyki skomponowanej do utworu audiowizualnego;
+5) w odniesieniu do utworu s&#x142;owno-muzycznego, je&#x17C;eli utw&#xF3;r s&#x142;owny i utw&#xF3;r muzyczny zosta&#x142;y stworzone specjalnie dla danego utworu s&#x142;owno-
+-muzycznego &#x2013; od &#x15B;mierci p&#xF3;&#x17A;niej zmar&#x142;ej z wymienionych os&#xF3;b: autora utworu s&#x142;ownego albo kompozytora utworu muzycznego.
+Art. 37. Je&#x17C;eli bieg terminu wyga&#x15B;ni&#x119;cia autorskich praw maj&#x105;tkowych rozpoczyna si&#x119; od rozpowszechnienia utworu, a utw&#xF3;r rozpowszechniono
+w cz&#x119;&#x15B;ciach, odcinkach, fragmentach lub wk&#x142;adkach, bieg terminu liczy si&#x119; oddzielnie od daty rozpowszechnienia ka&#x17C;dej z wymienionych cz&#x119;&#x15B;ci.
+Art. 38. (uchylony)
+Art. 39. Czas trwania autorskich praw maj&#x105;tkowych liczy si&#x119; w latach pe&#x142;nych nast&#x119;puj&#x105;cych po roku, w kt&#xF3;rym nast&#x105;pi&#x142;o zdarzenie, od kt&#xF3;rego zaczyna si&#x119; bieg termin&#xF3;w okre&#x15B;lonych w art. 36 i art. 37.</instruction>
+                                </field>
+                                <field>
+                                    <name>lawsowner</name>
+                                    <label>
+                                        <pl>Dysponent praw</pl>
+                                        <en />
+                                    </label>
+                                    <order>3</order>
+                                    <type>singledict</type>
+                                    <dictionary>copyrightperson</dictionary>
+                                    <require>0</require>
+                                    <sort />
+                                    <sortpath />
+                                    <fulltext />
+                                    <write>0</write>
+                                    <limit>0</limit>
+                                    <complex>0</complex>
+                                    <instruction>Wyb&#xF3;r ze s&#x142;ownika: Dysponent praw.
+
+Nale&#x17C;y wype&#x142;ni&#x107; w przypadku ogranicze&#x144; w korzystaniu z utworu przez Muzeum lub osoby trzecie, wybieraj&#x105;c nazwisko osoby, z kt&#xF3;r&#x105; nale&#x17C;y skontaktowa&#x107; si&#x119; w celu uzyskania licencji na korzystanie z utworu.</instruction>
+                                </field>
+                                <field>
+                                    <name>contracttype</name>
+                                    <label>
+                                        <pl>Rodzaj umowy</pl>
+                                        <en />
+                                    </label>
+                                    <order>4</order>
+                                    <type>singledict</type>
+                                    <dictionary>copyrightcontracttype</dictionary>
+                                    <require>0</require>
+                                    <sort />
+                                    <sortpath />
+                                    <fulltext />
+                                    <write>0</write>
+                                    <limit>0</limit>
+                                    <complex>0</complex>
+                                    <instruction>Wyb&#xF3;r ze s&#x142;ownika: Rodzaj umowy.</instruction>
+                                </field>
+                                <field>
+                                    <name>contractnumber</name>
+                                    <label>
+                                        <pl>Numer umowy</pl>
+                                        <en />
+                                    </label>
+                                    <order>5</order>
+                                    <type>single</type>
+                                    <dictionary />
+                                    <require>0</require>
+                                    <sort />
+                                    <sortpath />
+                                    <fulltext />
+                                    <write>0</write>
+                                    <limit>0</limit>
+                                    <complex>0</complex>
+                                    <instruction>Nale&#x17C;y wpisa&#x107; numer umowy, zgodnie z instrukcj&#x105; kancelaryjn&#x105;.</instruction>
+                                </field>
+                                <field>
+                                    <name>contractdate</name>
+                                    <label>
+                                        <pl>Data umowy</pl>
+                                        <en />
+                                    </label>
+                                    <order>6</order>
+                                    <type>datesingle</type>
+                                    <dictionary />
+                                    <require>0</require>
+                                    <sort />
+                                    <sortpath />
+                                    <fulltext />
+                                    <write>0</write>
+                                    <limit>0</limit>
+                                    <complex>0</complex>
+                                    <instruction>Procedura kontroli praw albo wpis danych</instruction>
+                                </field>
+                                <field>
+                                    <name>lawsscope</name>
+                                    <label>
+                                        <pl>Zakres udzielonych praw</pl>
+                                        <en />
+                                    </label>
+                                    <order>7</order>
+                                    <type>multidict</type>
+                                    <dictionary>copyrightscope</dictionary>
+                                    <require>0</require>
+                                    <sort />
+                                    <sortpath />
+                                    <fulltext />
+                                    <write>0</write>
+                                    <limit>0</limit>
+                                    <complex>0</complex>
+                                    <instruction>Wyb&#xF3;r ze s&#x142;ownika: zakres praw.
+ 
+Prawo do korzystania z utworu na wszystkich polach eksploatacji obejmuje:
+a.	utrwalanie i zwielokrotnianie utworu dowoln&#x105; technik&#x105; w tym m. in. technik&#x105; drukarsk&#x105;, reprograficzn&#x105;, zapisu magnetycznego, technik&#x105; cyfrow&#x105; lub jak&#x105;kolwiek inn&#x105; technik&#x105;,
+b.	wprowadzanie do obrotu, 
+c.	wprowadzanie do pami&#x119;ci komputera oraz publicznego udost&#x119;pniania tak, aby ka&#x17C;dy m&#xF3;g&#x142; mie&#x107; dost&#x119;p do utworu w miejscu i w czasie przez siebie wybranym (m.in. udost&#x119;pniania on-line),
+d.	publiczne odtwarzania, wy&#x15B;wietlania,
+e.	wystawianie,
+f.	u&#x17C;yczanie i najem orygina&#x142;&#xF3;w oraz egzemplarzy stworzonych zgodnie z umow&#x105;,
+g.	nadawanie i remitowanie dowoln&#x105; technik&#x105;.</instruction>
+                                </field>
+                                <field>
+                                    <name>contractcomment</name>
+                                    <label>
+                                        <pl>Uwagi/Warunki</pl>
+                                        <en />
+                                    </label>
+                                    <order>8</order>
+                                    <type>singlemultilang</type>
+                                    <dictionary />
+                                    <require>0</require>
+                                    <sort />
+                                    <sortpath />
+                                    <fulltext />
+                                    <write>0</write>
+                                    <limit>0</limit>
+                                    <complex>0</complex>
+                                    <instruction>Wpis danych.
+
+Uszczeg&#xF3;&#x142;owienie zakresu udzielonych praw lub wskazanie dodatkowych warunk&#xF3;w zawartych w umowie, zwi&#x105;zanych np. z tre&#x15B;ci&#x105; noty copyrightowej.</instruction>
+                                </field>
+                                <field>
+                                    <name>imagerestrictions</name>
+                                    <label>
+                                        <pl>Wizerunek - ograniczenia</pl>
+                                        <en />
+                                    </label>
+                                    <order>9</order>
+                                    <type>checkbox</type>
+                                    <dictionary />
+                                    <require>0</require>
+                                    <sort />
+                                    <sortpath />
+                                    <fulltext />
+                                    <write>0</write>
+                                    <limit>0</limit>
+                                    <complex>0</complex>
+                                    <instruction>Zaznaczenie pola jedynie w przypadku istnienia ogranicze&#x144; w korzystaniu z wizerunku.</instruction>
+                                </field>
+                                <field>
+                                    <name>imagecomment</name>
+                                    <label>
+                                        <pl>Komentarz</pl>
+                                        <en />
+                                    </label>
+                                    <order>10</order>
+                                    <type>singlemultilang</type>
+                                    <dictionary />
+                                    <require>0</require>
+                                    <sort />
+                                    <sortpath />
+                                    <fulltext />
+                                    <write>0</write>
+                                    <limit>0</limit>
+                                    <complex>0</complex>
+                                    <instruction>Wpis informacji dotycz&#x105;cych ogranicze&#x144; z korzystania z utworu wynikaj&#x105;cych praw do wizerunku.</instruction>
+                                </field>
+                            </fields>
+                        </clusters>
+                    </bookmark>
+                    <bookmark>
+                        <id>331</id>
+                        <name>online</name>
+                        <label>
+                            <pl>OnLine</pl>
+                            <en />
+                        </label>
+                        <order>7</order>
+                        <type>1</type>
+                        <clusters>
+                            <cluster>
+                                <id>687</id>
+                                <name>online</name>
+                                <label>
+                                    <pl>OnLine</pl>
+                                    <en>OnLine</en>
+                                </label>
+                                <order>1</order>
+                            </cluster>
+                            <fields>
+                                <field>
+                                    <name>readyforpublication</name>
+                                    <label>
+                                        <pl>Gotowy do publikacji</pl>
+                                        <en />
+                                    </label>
+                                    <order>1</order>
+                                    <type>checkbox</type>
+                                    <dictionary />
+                                    <require>0</require>
+                                    <sort />
+                                    <sortpath />
+                                    <fulltext />
+                                    <write>0</write>
+                                    <limit>0</limit>
+                                    <complex>0</complex>
+                                    <instruction>Wype&#x142;nia Dzia&#x142; Inwentarzy
+zaznaczenie
+
+Wskazanie gotowo&#x15B;ci karty obiektu do udost&#x119;pnienia online.
+Pole zaznaczane po weryfikacji poprawno&#x15B;ci i kompletno&#x15B;ci wszystkich danych w podstawowej formatce z danymi obiektu w katalogu online, zapisanych w polach: numer inwentarzowy, tw&#xF3;rcy, nazwa, technika, rodzaj, materia&#x142;, wymiary, datowanie, miejsce administracyjne, miejsce geograficzne, status. 
+
+Brak zaznaczenia pola oznacza brak gotowo&#x15B;ci karty obiektu do publikacji.</instruction>
+                                </field>
+                                <field>
+                                    <name>onlinefields</name>
+                                    <label>
+                                        <pl>Pola do eksportu</pl>
+                                        <en />
+                                    </label>
+                                    <order>2</order>
+                                    <type>multidict</type>
+                                    <dictionary>onlinefields</dictionary>
+                                    <require>0</require>
+                                    <sort />
+                                    <sortpath />
+                                    <fulltext />
+                                    <write>0</write>
+                                    <limit>0</limit>
+                                    <complex>0</complex>
+                                    <instruction>Wype&#x142;nia Dzia&#x142; Inwentarzy
+Wyb&#xF3;r odpowiednich p&#xF3;l.
+
+Wskazanie p&#xF3;l z danymi dodatkowymi, kt&#xF3;re mog&#x105; zosta&#x107; udost&#x119;pnione w katalogu online.
+Przyk&#x142;adowe pola: skr&#xF3;cony opis, opis, historia obiektu, analogie, sygnatury, oznaczenia, noty popularnonaukowe, wystawy, bibliografia.</instruction>
+                                </field>
+                                <field>
+                                    <name>tags</name>
+                                    <label>
+                                        <pl>Tagi</pl>
+                                        <en />
+                                    </label>
+                                    <order>3</order>
+                                    <type>multidict</type>
+                                    <dictionary>tags</dictionary>
+                                    <require>0</require>
+                                    <sort />
+                                    <sortpath />
+                                    <fulltext />
+                                    <write>0</write>
+                                    <limit>0</limit>
+                                    <complex>0</complex>
+                                    <instruction>Wype&#x142;nia opracowuj&#x105;cy
+Wyb&#xF3;r ze s&#x142;ownika: Tagi
+
+Pole wielokrotne, umo&#x17C;liwiaj&#x105;ce wyb&#xF3;r wi&#x119;cej ni&#x17C; jednego has&#x142;a.</instruction>
+                                </field>
+                                <field>
+                                    <name>online</name>
+                                    <label>
+                                        <pl>Online z wizerunkiem</pl>
+                                        <en />
+                                    </label>
+                                    <order>4</order>
+                                    <type>checkbox</type>
+                                    <dictionary />
+                                    <require>0</require>
+                                    <sort>online</sort>
+                                    <sortpath />
+                                    <fulltext />
+                                    <write>0</write>
+                                    <limit>0</limit>
+                                    <complex>0</complex>
+                                    <instruction>Wype&#x142;nia Dzia&#x142; Inwentarzy
+zaznaczenie
+
+Wskazanie mo&#x17C;liwo&#x15B;ci udost&#x119;pnienia obiektu online wraz z wizerunkiem.
+
+Zaznaczenie tego pola odnosi si&#x119; jedynie do mo&#x17C;liwo&#x15B;ci publikacji obiektu z wizerunkiem w katalogu online MuFo; nie oznacza automatycznie, &#x17C;e obiekt mo&#x17C;e by&#x107; udost&#x119;pniany osobom trzecim do korzystania na dowolnym polu eksploatacji. Zakres ogranicze&#x144; i uprawnie&#x144; wynikaj&#x105;cych z praw autorskich powinien zosta&#x107; szczeg&#xF3;&#x142;owo wskazany w zak&#x142;adce Prawa. 
+
+Brak zaznaczenia pola oznacza brak mo&#x17C;liwo&#x15B;ci publikacji obiektu z wizerunkiem lub brak rozpoznania prawnego.</instruction>
+                                </field>
+                                <field>
+                                    <name>onlinedate</name>
+                                    <label>
+                                        <pl>Data udost&#x119;pnienia on-line z wizerunkiem</pl>
+                                        <en />
+                                    </label>
+                                    <order>5</order>
+                                    <type>datesingle</type>
+                                    <dictionary />
+                                    <require>0</require>
+                                    <sort />
+                                    <sortpath />
+                                    <fulltext />
+                                    <write>0</write>
+                                    <limit>0</limit>
+                                    <complex>0</complex>
+                                    <instruction>Wype&#x142;nia Dzia&#x142; Inwentarzy
+wyb&#xF3;r daty z kalendarza
+
+Data, od kt&#xF3;rej obiekt mo&#x17C;e zosta&#x107; udost&#x119;pniony w katalogu online wraz z wizerunkiem lub data wype&#x142;nienia karty (w przypadku np. obiekt&#xF3;w znajduj&#x105;cych si&#x119; w domenie publicznej).</instruction>
+                                </field>
+                                <field>
+                                    <name>onlinerecommended</name>
+                                    <label>
+                                        <pl>Polecane</pl>
+                                        <en />
+                                    </label>
+                                    <order>6</order>
+                                    <type>checkbox</type>
+                                    <dictionary />
+                                    <require>0</require>
+                                    <sort />
+                                    <sortpath />
+                                    <fulltext />
+                                    <write>0</write>
+                                    <limit>0</limit>
+                                    <complex>0</complex>
+                                    <instruction>Wype&#x142;nia opracowuj&#x105;cy
+Zaznaczenie
+
+Oznaczone karty dost&#x119;pne s&#x105; w zak&#x142;adce katalogu online pod t&#x105; sam&#x105; nazw&#x105;. S&#x142;u&#x17C;y ona prezentacji obiekt&#xF3;w najciekawszych, wartych uwagi, zaskakuj&#x105;cych czy w jaki&#x15B; spos&#xF3;b odznaczaj&#x105;cych si&#x119; na tle ca&#x142;ej kolekcji (np. swoj&#x105; histori&#x105;).</instruction>
+                                </field>
+                                <field>
+                                    <name>subfolder</name>
+                                    <label>
+                                        <pl>Podkategoria</pl>
+                                        <en />
+                                    </label>
+                                    <order>7</order>
+                                    <type>singledict</type>
+                                    <dictionary>subfloders</dictionary>
+                                    <require>0</require>
+                                    <sort />
+                                    <sortpath />
+                                    <fulltext />
+                                    <write>0</write>
+                                    <limit>0</limit>
+                                    <complex>0</complex>
+                                    <instruction>Wype&#x142;nia opracowuj&#x105;cy
+Wyb&#xF3;r ze s&#x142;ownika: Podkategorie Online
+
+Klasyfikacja obiekt&#xF3;w zgodnie z przyj&#x119;t&#x105; w Muzeum Polityk&#x105; gromadzenia zbior&#xF3;w.</instruction>
+                                </field>
+                                <field>
+                                    <name>galtem</name>
+                                    <label>
+                                        <pl>Galeria Tematyczna</pl>
+                                        <en />
+                                    </label>
+                                    <order>8</order>
+                                    <type>multidict</type>
+                                    <dictionary>galtem</dictionary>
+                                    <require>0</require>
+                                    <sort />
+                                    <sortpath />
+                                    <fulltext />
+                                    <write>0</write>
+                                    <limit>0</limit>
+                                    <complex>0</complex>
+                                    <instruction />
+                                </field>
+                                <field>
+                                    <name>onlinepromoted</name>
+                                    <label>
+                                        <pl>Promowane</pl>
+                                        <en />
+                                    </label>
+                                    <order>9</order>
+                                    <type>checkbox</type>
+                                    <dictionary />
+                                    <require>0</require>
+                                    <sort>onlinepromoted</sort>
+                                    <sortpath />
+                                    <fulltext />
+                                    <write>0</write>
+                                    <limit>0</limit>
+                                    <complex>0</complex>
+                                    <instruction />
+                                </field>
+                            </fields>
+                        </clusters>
+                    </bookmark>
+                </bookmarks>
+            </division>
+        </divisions>
+    </structure>
+</xml>
