@@ -7,11 +7,11 @@ import xml.etree.ElementTree as ET
 import xmltodict
 
 
-def json_extract(obj, key):
+def json_extract(obj: object, key: str) -> str:
     """Recursively fetch values from nested JSON."""
     arr = []
 
-    def extract(obj, arr, key):
+    def extract(obj: object, arr: list, key: str) -> str:
         """Recursively search for values of key in JSON tree."""
         if isinstance(obj, dict):
             for k, v in obj.items():
@@ -30,11 +30,35 @@ def json_extract(obj, key):
     return values
 
 
+class JSONTemplate:
+    def __init__(self, template_file: str):
+        with open(template_file, 'r') as file:
+            self.template = json.load(file)
+
+    def add_data(self, data_file: str):
+        with open(data_file, 'r') as file:
+            data = json.load(file)
+        self.template.update(data)
+
+    def delete_data(self, key: str):
+        if key in self.template:
+            del self.template[key]
+
+    def edit_data(self, key: str, value: str):
+        if key in self.template:
+            self.template[key] = value
+
+    def save_template(self, filename: str):
+        with open(filename, 'w') as file:
+            json.dump(self.template, file, indent=4)
+
+
 class App(customtkinter.CTk):
     def __init__(self):
         super().__init__()
 
         # configure window
+        self.template = None
         self.data = None
         self.data_dict = None
         self.json_data = None
@@ -123,7 +147,7 @@ class App(customtkinter.CTk):
     def convert_to_json(self):
         self.json_data = self.data_dict
         self.textbox.insert("0.0", json.dumps(self.data_dict, indent=4))
-        # print(self.json_data)
+        print(self.json_data)
 
     def search(self):
         self.textbox.delete("0.0", "end")
@@ -146,7 +170,7 @@ class App(customtkinter.CTk):
             defaultextension="*.json")
         if filename:
             with open(filename, "w") as file:
-                json.dump(self.data, file)
+                json.dump(self.json_data, file)
 
 
 if __name__ == "__main__":
